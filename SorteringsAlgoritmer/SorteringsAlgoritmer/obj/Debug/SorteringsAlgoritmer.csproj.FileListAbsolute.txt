@@ -1,0 +1,7 @@
+C:\Users\Elev\source\repos\SorteringsAlgoritmer\SorteringsAlgoritmer\bin\Debug\SorteringsAlgoritmer.exe.config
+C:\Users\Elev\source\repos\SorteringsAlgoritmer\SorteringsAlgoritmer\bin\Debug\SorteringsAlgoritmer.exe
+C:\Users\Elev\source\repos\SorteringsAlgoritmer\SorteringsAlgoritmer\bin\Debug\SorteringsAlgoritmer.pdb
+C:\Users\Elev\source\repos\SorteringsAlgoritmer\SorteringsAlgoritmer\obj\Debug\SorteringsAlgoritmer.csprojAssemblyReference.cache
+C:\Users\Elev\source\repos\SorteringsAlgoritmer\SorteringsAlgoritmer\obj\Debug\SorteringsAlgoritmer.csproj.CoreCompileInputs.cache
+C:\Users\Elev\source\repos\SorteringsAlgoritmer\SorteringsAlgoritmer\obj\Debug\SorteringsAlgoritmer.exe
+C:\Users\Elev\source\repos\SorteringsAlgoritmer\SorteringsAlgoritmer\obj\Debug\SorteringsAlgoritmer.pdb
