@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,21 +25,50 @@ namespace SorteringsAlgoritmer
                 }
             }
         }
+        static void InsertionSort(List<int> minLista2)
+        {
+            //Gör en loop för varje tal som skall sorteras 
+            //börja på index 1 då vi kommer att titta "bakåt" i vektorn
+            for (int i = 1; i < minLista2.Length; i++)
+            {
+                //Stega bakåt från position i ned till 1 om så behövs
+                for (int j = i; j > 0; j--)
+                {
+                    //jämför med talet "bakom" och se om det är större
+                    if (minLista2[j] < minLista2[j - 1])
+                    {
+                        //byt plats på tal
+                        int tmp = minLista2[j - 1];
+                        minLista2[j - 1] = minLista2[j];
+                        minLista2[j] = tmp;
+                    }
+                    //annars avsluta innerloop'en 
+                    else
+                        break;
+                }
+            }
+        }
+
+
 
         static void Main(string[] args)
         {
             var tallista = new List<int>();
-            tallista.Add(7); tallista.Add(10); tallista.Add(3); tallista.Add(1);
-            tallista.Add(3); tallista.Add(15); tallista.Add(8); tallista.Add(5);
 
             Random slump = new Random();
-            for (int i = 0; i < 60000; i++)
+            for (int i = 0; i < 100000; i++)
                 tallista.Add(slump.Next(100000));
 
-            BubbleSort(tallista);
+            Stopwatch stopWatch = new Stopwatch();
+            stopWatch.Start();
+            
+            InsertionSort(tallista);
 
-            foreach (int i in tallista)
-                Console.WriteLine(i);
+            stopWatch.Stop();
+            Console.WriteLine("Listan är sorterad!");
+            Console.WriteLine("Tid det tog: " + stopWatch.Elapsed);
+
+
         }
     }
 }
